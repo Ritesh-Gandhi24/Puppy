@@ -3,7 +3,7 @@
      Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="puppy">
+  name="puppy2">
   <link
     name="base">
     <inertial>
@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/base.STL" />
+          filename="package://puppy2/meshes/base.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/base.STL" />
+          filename="package://puppy2/meshes/base.STL" />
       </geometry>
     </collision>
   </link>
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/BRupper.STL" />
+          filename="package://puppy2/meshes/BRupper.STL" />
       </geometry>
       <material
         name="">
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/BRupper.STL" />
+          filename="package://puppy2/meshes/BRupper.STL" />
       </geometry>
     </collision>
   </link>
@@ -124,7 +124,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/BRlower.STL" />
+          filename="package://puppy2/meshes/BRlower.STL" />
       </geometry>
       <material
         name="">
@@ -138,7 +138,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/BRlower.STL" />
+          filename="package://puppy2/meshes/BRlower.STL" />
       </geometry>
     </collision>
   </link>
@@ -182,7 +182,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/BRendeffector.STL" />
+          filename="package://puppy2/meshes/BRendeffector.STL" />
       </geometry>
       <material
         name="">
@@ -196,7 +196,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/BRendeffector.STL" />
+          filename="package://puppy2/meshes/BRendeffector.STL" />
       </geometry>
     </collision>
   </link>
@@ -235,7 +235,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/BLupper.STL" />
+          filename="package://puppy2/meshes/BLupper.STL" />
       </geometry>
       <material
         name="">
@@ -249,7 +249,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/BLupper.STL" />
+          filename="package://puppy2/meshes/BLupper.STL" />
       </geometry>
     </collision>
   </link>
@@ -293,7 +293,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/BLlower.STL" />
+          filename="package://puppy2/meshes/BLlower.STL" />
       </geometry>
       <material
         name="">
@@ -307,7 +307,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/BLlower.STL" />
+          filename="package://puppy2/meshes/BLlower.STL" />
       </geometry>
     </collision>
   </link>
@@ -351,7 +351,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/BLendeffoctor.STL" />
+          filename="package://puppy2/meshes/BLendeffoctor.STL" />
       </geometry>
       <material
         name="">
@@ -365,7 +365,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/BLendeffoctor.STL" />
+          filename="package://puppy2/meshes/BLendeffoctor.STL" />
       </geometry>
     </collision>
   </link>
@@ -404,7 +404,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/spine.STL" />
+          filename="package://puppy2/meshes/spine.STL" />
       </geometry>
       <material
         name="">
@@ -418,7 +418,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/spine.STL" />
+          filename="package://puppy2/meshes/spine.STL" />
       </geometry>
     </collision>
   </link>
@@ -462,7 +462,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/FRupper.STL" />
+          filename="package://puppy2/meshes/FRupper.STL" />
       </geometry>
       <material
         name="">
@@ -476,7 +476,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/FRupper.STL" />
+          filename="package://puppy2/meshes/FRupper.STL" />
       </geometry>
     </collision>
   </link>
@@ -520,7 +520,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/FRlower.STL" />
+          filename="package://puppy2/meshes/FRlower.STL" />
       </geometry>
       <material
         name="">
@@ -534,7 +534,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/FRlower.STL" />
+          filename="package://puppy2/meshes/FRlower.STL" />
       </geometry>
     </collision>
   </link>
@@ -578,7 +578,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/FRendeffector.STL" />
+          filename="package://puppy2/meshes/FRendeffector.STL" />
       </geometry>
       <material
         name="">
@@ -592,7 +592,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/FRendeffector.STL" />
+          filename="package://puppy2/meshes/FRendeffector.STL" />
       </geometry>
     </collision>
   </link>
@@ -631,7 +631,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/FLupper.STL" />
+          filename="package://puppy2/meshes/FLupper.STL" />
       </geometry>
       <material
         name="">
@@ -645,7 +645,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/FLupper.STL" />
+          filename="package://puppy2/meshes/FLupper.STL" />
       </geometry>
     </collision>
   </link>
@@ -689,7 +689,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/FLlower.STL" />
+          filename="package://puppy2/meshes/FLlower.STL" />
       </geometry>
       <material
         name="">
@@ -703,7 +703,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/FLlower.STL" />
+          filename="package://puppy2/meshes/FLlower.STL" />
       </geometry>
     </collision>
   </link>
@@ -747,7 +747,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/FLendeffector.STL" />
+          filename="package://puppy2/meshes/FLendeffector.STL" />
       </geometry>
       <material
         name="">
@@ -761,7 +761,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puppy/meshes/FLendeffector.STL" />
+          filename="package://puppy2/meshes/FLendeffector.STL" />
       </geometry>
     </collision>
   </link>
