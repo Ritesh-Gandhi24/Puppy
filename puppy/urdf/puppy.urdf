@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="puppy">
+  <link
+    name="base">
+    <inertial>
+      <origin
+        xyz="-0.0848760098012156 0.00189338221456782 -0.00564240856897393"
+        rpy="0 0 0" />
+      <mass
+        value="0.0877652222686672" />
+      <inertia
+        ixx="6.71287303766884E-05"
+        ixy="-1.42010835012127E-07"
+        ixz="4.15756766619336E-08"
+        iyy="4.81636880074202E-05"
+        iyz="1.70696982566126E-07"
+        izz="0.000111971964758479" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="BRupper">
+    <inertial>
+      <origin
+        xyz="-1.31838984174237E-16 -0.020094052978077 -0.0261900725763579"
+        rpy="0 0 0" />
+      <mass
+        value="0.00137186549492847" />
+      <inertia
+        ixx="1.09735556402532E-06"
+        ixy="1.24155450080988E-22"
+        ixz="-4.83173663571447E-22"
+        iyy="1.12075946903692E-06"
+        iyz="-7.5303696915915E-08"
+        izz="9.75943333413553E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/BRupper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/BRupper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BRshoulder"
+    type="revolute">
+    <origin
+      xyz="-0.1119 -0.050428 0.011667"
+      rpy="0 0 0" />
+    <parent
+      link="base" />
+    <child
+      link="BRupper" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0.1"
+      velocity="6.54" />
+  </joint>
+  <link
+    name="BRlower">
+    <inertial>
+      <origin
+        xyz="-0.000234833099330624 -0.00375952629312543 -0.0349690079990731"
+        rpy="0 0 0" />
+      <mass
+        value="0.000794658956651044" />
+      <inertia
+        ixx="4.53670562589244E-07"
+        ixy="-4.56552878947085E-15"
+        ixz="3.03735156000809E-10"
+        iyy="4.71980771396109E-07"
+        iyz="-1.84817920781324E-10"
+        izz="2.09778315483401E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/BRlower.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/BRlower.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BRknee"
+    type="revolute">
+    <origin
+      xyz="0 -0.02525 -0.08"
+      rpy="0 0 0" />
+    <parent
+      link="BRupper" />
+    <child
+      link="BRlower" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0.1"
+      velocity="6.54" />
+  </joint>
+  <link
+    name="BRendeffector">
+    <inertial>
+      <origin
+        xyz="8.46545056276682E-16 -0.00025 -1.4432899320127E-15"
+        rpy="0 0 0" />
+      <mass
+        value="1.25E-07" />
+      <inertia
+        ixx="5.20833333333336E-15"
+        ixy="-4.65376336266319E-32"
+        ixz="0"
+        iyy="5.20833333333336E-15"
+        iyz="2.56900541685569E-31"
+        izz="5.20833333333336E-15" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/BRendeffector.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/BRendeffector.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BRendeffector"
+    type="fixed">
+    <origin
+      xyz="-0.00335185708458729 -0.0035 -0.0940731336771356"
+      rpy="0 0 0" />
+    <parent
+      link="BRlower" />
+    <child
+      link="BRendeffector" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="BLupper">
+    <inertial>
+      <origin
+        xyz="-1.87350135405495E-16 0.0200940529780769 -0.0261900725763579"
+        rpy="0 0 0" />
+      <mass
+        value="0.00137186549492847" />
+      <inertia
+        ixx="1.09735556402533E-06"
+        ixy="-1.21831621736347E-22"
+        ixz="-4.9835387567068E-22"
+        iyy="1.12075946903692E-06"
+        iyz="7.53036969159152E-08"
+        izz="9.75943333413565E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/BLupper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/BLupper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BLshoulder"
+    type="revolute">
+    <origin
+      xyz="-0.1119 0.051072 0.011667"
+      rpy="0 0 0" />
+    <parent
+      link="base" />
+    <child
+      link="BLupper" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0.1"
+      velocity="6.54" />
+  </joint>
+  <link
+    name="BLlower">
+    <inertial>
+      <origin
+        xyz="-0.000234833099331359 0.00300951756216829 -0.0349690079990735"
+        rpy="0 0 0" />
+      <mass
+        value="0.000794658956651045" />
+      <inertia
+        ixx="4.53670562589244E-07"
+        ixy="-4.56552869479571E-15"
+        ixz="3.03735156000754E-10"
+        iyy="4.71980771396108E-07"
+        iyz="1.84793289189801E-10"
+        izz="2.09778315483401E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/BLlower.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/BLlower.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BLknee"
+    type="revolute">
+    <origin
+      xyz="0 0.0260000000000003 -0.08"
+      rpy="0 0 0" />
+    <parent
+      link="BLupper" />
+    <child
+      link="BLlower" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0.1"
+      velocity="6.54" />
+  </joint>
+  <link
+    name="BLendeffoctor">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-17 -0.00025000000000026 -3.88578058618805E-16"
+        rpy="0 0 0" />
+      <mass
+        value="1.25E-07" />
+      <inertia
+        ixx="5.20833333333336E-15"
+        ixy="-4.65376336266319E-32"
+        ixz="0"
+        iyy="5.20833333333336E-15"
+        iyz="2.56900541685569E-31"
+        izz="5.20833333333336E-15" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/BLendeffoctor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/BLendeffoctor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BLendeffector"
+    type="fixed">
+    <origin
+      xyz="-0.00335185708458607 0.00375000000000001 -0.0940731336771375"
+      rpy="0 0 0" />
+    <parent
+      link="BLlower" />
+    <child
+      link="BLendeffoctor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="spine">
+    <inertial>
+      <origin
+        xyz="0.0848954100946337 -0.00145874277817329 -0.00561919311683869"
+        rpy="0 0 0" />
+      <mass
+        value="0.0877632579108011" />
+      <inertia
+        ixx="6.71281140054909E-05"
+        ixy="-1.42011560341303E-07"
+        ixz="-3.91766176083604E-08"
+        iyy="4.81618566414868E-05"
+        iyz="-1.70756262031556E-07"
+        izz="0.00011197071837313" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/spine.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/spine.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="spineJoint"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base" />
+    <child
+      link="spine" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.4"
+      upper="1.4"
+      effort="0.2"
+      velocity="6.54" />
+  </joint>
+  <link
+    name="FRupper">
+    <inertial>
+      <origin
+        xyz="1.73757373583827E-06 -0.020094052978077 -0.0261900725187185"
+        rpy="0 0 0" />
+      <mass
+        value="0.00137186549492847" />
+      <inertia
+        ixx="1.09735555962475E-06"
+        ixy="4.99600471105703E-12"
+        ixz="6.63289056448277E-11"
+        iyy="1.12075946903692E-06"
+        iyz="-7.53036967501856E-08"
+        izz="9.75943377419297E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/FRupper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/FRupper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FRshoulder"
+    type="revolute">
+    <origin
+      xyz="0.111920857196909 -0.050428332870113 0.0116669609012932"
+      rpy="0 0 0" />
+    <parent
+      link="spine" />
+    <child
+      link="FRupper" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0.1"
+      velocity="6.54" />
+  </joint>
+  <link
+    name="FRlower">
+    <inertial>
+      <origin
+        xyz="-0.000234833099330173 -0.0037595262931242 -0.0349690079990745"
+        rpy="0 0 0" />
+      <mass
+        value="0.000794658956651045" />
+      <inertia
+        ixx="4.53670562589245E-07"
+        ixy="-4.56552878950674E-15"
+        ixz="3.03735156000671E-10"
+        iyy="4.71980771396109E-07"
+        iyz="-1.84817920781225E-10"
+        izz="2.09778315483401E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/FRlower.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/FRlower.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FRknee"
+    type="revolute">
+    <origin
+      xyz="0 -0.02525 -0.079999999823935"
+      rpy="0 0 0" />
+    <parent
+      link="FRupper" />
+    <child
+      link="FRlower" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0.1"
+      velocity="6.54" />
+  </joint>
+  <link
+    name="FRendeffector">
+    <inertial>
+      <origin
+        xyz="-0.00025 -0.00025 -0.00025"
+        rpy="0 0 0" />
+      <mass
+        value="1.25E-07" />
+      <inertia
+        ixx="5.20833333333336E-15"
+        ixy="-4.65376336266319E-32"
+        ixz="-4.22294922890066E-48"
+        iyy="5.20833333333336E-15"
+        iyz="2.56900541685569E-31"
+        izz="5.20833333333336E-15" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/FRendeffector.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/FRendeffector.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FRendeffector"
+    type="fixed">
+    <origin
+      xyz="-0.00310185708458594 -0.00349999999999998 -0.0938231336771371"
+      rpy="0 0 0" />
+    <parent
+      link="FRlower" />
+    <child
+      link="FRendeffector" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="FLupper">
+    <inertial>
+      <origin
+        xyz="1.73757373822525E-06 0.0200940529780769 -0.0261900725187148"
+        rpy="0 0 0" />
+      <mass
+        value="0.00137186549492847" />
+      <inertia
+        ixx="1.09735555962475E-06"
+        ixy="-4.99600471144892E-12"
+        ixz="6.63289056487136E-11"
+        iyy="1.12075946903692E-06"
+        iyz="7.53036967501843E-08"
+        izz="9.75943377419295E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/FLupper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/FLupper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FLshoulder"
+    type="revolute">
+    <origin
+      xyz="0.111920857196909 0.051071667129887 0.011666960901293"
+      rpy="0 0 0" />
+    <parent
+      link="spine" />
+    <child
+      link="FLupper" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0.1"
+      velocity="6.54" />
+  </joint>
+  <link
+    name="FLlower">
+    <inertial>
+      <origin
+        xyz="-0.000234833099331644 0.00375951756216946 -0.0349690079990732"
+        rpy="0 0 0" />
+      <mass
+        value="0.000794658956651044" />
+      <inertia
+        ixx="4.53670562589243E-07"
+        ixy="-4.56552869367781E-15"
+        ixz="3.03735156000756E-10"
+        iyy="4.71980771396108E-07"
+        iyz="1.84793289189802E-10"
+        izz="2.09778315483401E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/FLlower.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/FLlower.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FLknee"
+    type="revolute">
+    <origin
+      xyz="0 0.0252499999999974 -0.0799999998239349"
+      rpy="0 0 0" />
+    <parent
+      link="FLupper" />
+    <child
+      link="FLlower" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0.1"
+      velocity="6.54" />
+  </joint>
+  <link
+    name="FLendeffector">
+    <inertial>
+      <origin
+        xyz="-0.00025 0.000249999999999133 -0.000249999999999709"
+        rpy="0 0 0" />
+      <mass
+        value="1.25E-07" />
+      <inertia
+        ixx="5.20833333333336E-15"
+        ixy="-4.65376336266319E-32"
+        ixz="0"
+        iyy="5.20833333333336E-15"
+        iyz="2.56900541685569E-31"
+        izz="5.20833333333336E-15" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/FLendeffector.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://puppy/meshes/FLendeffector.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FLendeffector"
+    type="fixed">
+    <origin
+      xyz="-0.00310185708458682 0.00400000000000003 -0.0938231336771371"
+      rpy="0 0 0" />
+    <parent
+      link="FLlower" />
+    <child
+      link="FLendeffector" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
