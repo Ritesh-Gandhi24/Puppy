@@ -26,6 +26,7 @@ Launch the files
 Open a new terminal 
 
 ```bash
-  cd <package_name/src/puppy>
+  cd <package_name>
+  cd src/puppy
   roslaunch puppy gazebo.launch
 ```
