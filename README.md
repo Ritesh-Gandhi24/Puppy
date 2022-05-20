@@ -6,6 +6,7 @@ Clone this project
 
 ```bash
   cd <workspace_name>
+  cd src
   git clone https://github.com/Ritesh-Gandhi24/puppy.git
 ```
 
