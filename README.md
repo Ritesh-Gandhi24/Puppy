@@ -12,7 +12,7 @@ Clone this project
 Catkin build/make and source the folder
 
 ```bash
-  cd <package_name>
+  cd <workspace_name>
   catkin build
   source devel/setup.bash
 ```
