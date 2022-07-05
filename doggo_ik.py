@@ -2,10 +2,10 @@ import math
 import serial
 import time
 
-# arduino = serial.Serial(port='/dev/ttyACM0', baudrate=9600, timeout=.1)
-# def write(x):
-#     arduino.write(bytes(x, 'utf-8'))
-#     time.sleep(0.05)
+arduino = serial.Serial(port='/dev/ttyACM0', baudrate=9600, timeout=.1)
+def write(x):
+    arduino.write(bytes(x, 'utf-8'))
+    time.sleep(0.05)
    
 # while True:
 #     num = input("Enter a number: ") # Taking input from user
@@ -31,9 +31,18 @@ while True:
 
     theta2=180*theta2/math.pi
     theta1=theta1*180/math.pi
+    # if theta1>0:
+    #     theta1=theta1+90
     
-    theta1=theta1+90
+    # if theta2>0:
+    #     theta2=theta2+90;
 
+    # if theta1<0:
+    #     print("THETA1         ",theta1)
+    #     theta1=90+theta1
+    # if theta2<0:
+    #     print(theta2)
+    #     theta2=90+theta2
     send=f"{round(theta1)},{round(theta2)}"
     print(theta1, theta2)
-    # write(send)
+    write(send)
