@@ -1,24 +1,23 @@
 #include <Servo.h>
-Servo myservo1,myservo2;
+Servo myservo_2,myservo_3;
 
 int angle[2];
 String data;
-int above =10;
-int below= 9;
+int above =2;
+int below= 3;
 
 void setup() {
   Serial.begin(9600);
   Serial.setTimeout(10);
-  myservo1.attach(below);
-  myservo2.attach(above);
+  myservo_2.attach(2);
+  myservo_3.attach(3);
 //  myservo3.attach(2);
 //  myservo4.attach(3);
 //  myservo5.attach(4);
 //  myservo6.attach(5);
 //  myservo7.attach(6);
 //  myservo8.attach(7);
-  myservo1.write(130);
-  myservo2.write(90);
+ 
   delay(10);
 }
 
@@ -39,8 +38,9 @@ if (Serial.available() > 0) {
        }
  }
        
-//       myservo1.write(angle[0]);
-//       myservo2.write(angle[1]);
+       
+       myservo_3.write(angle[1]);
+       myservo_2.write(angle[0]);
 //       myservo3.write(angle[2]);
 //       myservo4.write(angle[3]);
 //       myservo5.write(angle[4]);
