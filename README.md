@@ -1,4 +1,4 @@
-# puppy
+# Quadruped 
 
 ## Deployment
 
